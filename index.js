@@ -169,8 +169,8 @@ function populateMaps (extensions, types) {
       var extension = exts[i]
 
       if (types[extension]) {
-        var from = mimeScore(types[extension], db[types[extension]].source);
-        var to = mimeScore(type, mime.source);
+        var from = mimeScore(types[extension], db[types[extension]].source)
+        var to = mimeScore(type, mime.source)
 
         if (from > to) {
           // skip the remapping
